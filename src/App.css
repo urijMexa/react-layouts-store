@@ -81,7 +81,6 @@ body {
   font-weight: bold;
 }
 
-/* List View */
 .list-view {
   display: flex;
   flex-direction: column;
@@ -91,7 +90,7 @@ body {
 .shop-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -106,14 +105,18 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #333;
+  width: 300px;
 }
 
 .item-color {
   color: #555;
+  width: 100px;
 }
 
 .item-price {
   color: red;
   font-size: 20px;
   font-weight: bold;
+  width: 100px;
+  text-align: center;
 }
