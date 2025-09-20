@@ -3,6 +3,8 @@
 body {
   font-family: sans-serif;
   margin: 20px;
+  background-color: #fff;
+  color: #212529;
 }
 
 .store-container {
@@ -21,7 +23,6 @@ body {
   color: #555;
 }
 
-/* Cards View */
 .cards-view {
   display: flex;
   flex-wrap: wrap;
@@ -64,34 +65,20 @@ body {
   margin-top: 15px;
 }
 
-.card-price {
-  color: red;
-  font-size: 20px;
-  font-weight: bold;
-}
 
-.add-to-cart-btn {
-  border: 2px solid red;
-  color: red;
-  background-color: transparent;
-  padding: 8px 15px;
-  border-radius: 20px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-/* List View */
 .list-view {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .shop-item {
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
 }
@@ -99,26 +86,29 @@ body {
 .item-image {
   width: 80px;
   height: 80px;
-  margin-right: 20px;
+  flex-shrink: 0;
 }
 
 .item-name {
   font-size: 24px;
   font-weight: bold;
   color: #333;
+  margin: 0 20px;
+
+  flex-grow: 1;
 }
 
 .item-color {
   color: #555;
-  margin: 0 20px;
+  flex-shrink: 0;
 }
 
 .item-price {
   color: red;
   font-size: 20px;
   font-weight: bold;
-
-  margin-right: auto;
+  margin: 0 40px;
+  flex-shrink: 0;
 }
 
 .add-to-cart-btn {
